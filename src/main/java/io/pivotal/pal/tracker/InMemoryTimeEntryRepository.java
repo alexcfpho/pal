@@ -1,6 +1,5 @@
 package io.pivotal.pal.tracker;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.Map;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository{
     private Map<Long, TimeEntry> map = new HashMap<>();
-    private  Long counter=0L;
+    private Long counter=0L;
 
     @Override
     public TimeEntry create(TimeEntry timeEntry) {

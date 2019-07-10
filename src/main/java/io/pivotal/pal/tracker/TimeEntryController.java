@@ -8,6 +8,7 @@ import java.util.List;
 
 
 @RestController
+//@RequestMapping("time-entries/") // Use this as the root, {x} can be done with annotations per method
 public class TimeEntryController {
 
     // Declaration of our repository object to instantiate
